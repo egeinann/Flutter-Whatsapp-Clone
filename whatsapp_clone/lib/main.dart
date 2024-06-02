@@ -1,0 +1,51 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
+import 'package:whatsapp_clone/customs/themes.dart';
+import 'package:whatsapp_clone/screens/MAIN_SCREEN/main_screen.dart';
+import 'package:whatsapp_clone/screens/SETTINGS_SCREENS/settings_chats_screen.dart';
+import 'package:whatsapp_clone/screens/camera_screen.dart';
+import 'package:whatsapp_clone/screens/SETTINGS_SCREENS/settings_screen.dart';
+import 'package:whatsapp_clone/screens/userchat_screen.dart';
+
+void main() {
+  // Uygulamanın yalnızca dikey modda kalmasını sağlamak için
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]).then((_) {
+    runApp(const WhatsappClone());
+  });
+}
+
+class WhatsappClone extends StatelessWidget {
+  const WhatsappClone({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ChangeNotifierProvider(
+      create: (context) => ThemeProvider(),
+      child: Consumer<ThemeProvider>(
+        builder: (context, themeProvider, child) {
+          return MaterialApp(
+            debugShowCheckedModeBanner: false,
+            initialRoute: "/main_screen",
+            routes: {
+              "/camera_screen": (context) => const CameraScreen(),
+              "/main_screen": (context) => const MainScreen(),
+              "/userchat_screen": (context) => const UserChatScreen(),
+              "/settings_screen": (context) => const SettingsScreen(),
+              "/settings_chats_screen": (context) =>
+                  const SettingsChatsScreen(),
+            },
+            // *** PROVIDER THEMECLASS STATE MANAGEMENT ***
+            theme: themeProvider.isDarkModeEnabled
+                ? ThemeClass.darkTheme
+                : ThemeClass.lightTheme,
+          );
+        },
+      ),
+    );
+  }
+}
