@@ -39,7 +39,7 @@ class _ChatsScreenState extends State<ChatsScreen> {
                     borderRadius: BorderRadius.circular(
                         MediaQuery.of(context).size.width * 0.04),
                     color: isSelectedTumu == true
-                        ? Theme.of(context).backgroundColor
+                        ? Theme.of(context).dialogBackgroundColor
                         : const Color.fromARGB(115, 131, 131, 131),
                   ),
                   child: Padding(
@@ -72,7 +72,7 @@ class _ChatsScreenState extends State<ChatsScreen> {
                     borderRadius: BorderRadius.circular(
                         MediaQuery.of(context).size.width * 0.04),
                     color: isSelectedOkunmamis == true
-                        ? Theme.of(context).backgroundColor
+                        ? Theme.of(context).dialogBackgroundColor
                         : const Color.fromARGB(115, 131, 131, 131),
                   ),
                   child: Padding(
@@ -159,7 +159,7 @@ class _ChatsScreenState extends State<ChatsScreen> {
                           height: MediaQuery.of(context).size.height * 0.03,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(100),
-                              color: Color.fromARGB(255, 54, 155, 110)),
+                              color: const Color.fromARGB(255, 54, 155, 110)),
                           child: Center(
                             child: Text(
                               "1",

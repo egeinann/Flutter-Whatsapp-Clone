@@ -188,7 +188,8 @@ class _MainScreenState extends State<MainScreen>
                               MediaQuery.of(context).size.width * 0.05),
                         ),
                         child: Icon(icons[_selectedTabBar],
-                            size: MediaQuery.of(context).size.width * 0.07,color: Colors.white),
+                            size: MediaQuery.of(context).size.width * 0.07,
+                            color: Colors.white),
                       ),
                     ),
                   ),
@@ -218,8 +219,7 @@ class _MainScreenState extends State<MainScreen>
                             child: AnimatedContainer(
                                 duration: const Duration(milliseconds: 300),
                                 decoration: BoxDecoration(
-                                  color:
-                                      Theme.of(context).backgroundColor,
+                                  color: Theme.of(context).dialogBackgroundColor,
                                   borderRadius: BorderRadius.circular(
                                       MediaQuery.of(context).size.width * 0.08),
                                 ),
@@ -257,8 +257,7 @@ class _MainScreenState extends State<MainScreen>
                             child: AnimatedContainer(
                                 duration: const Duration(milliseconds: 300),
                                 decoration: BoxDecoration(
-                                  color:
-                                      Theme.of(context).backgroundColor,
+                                  color: Theme.of(context).dialogBackgroundColor,
                                   borderRadius: BorderRadius.circular(
                                       MediaQuery.of(context).size.width * 0.08),
                                 ),
@@ -296,8 +295,7 @@ class _MainScreenState extends State<MainScreen>
                             child: AnimatedContainer(
                                 duration: const Duration(milliseconds: 300),
                                 decoration: BoxDecoration(
-                                  color:
-                                      Theme.of(context).backgroundColor,
+                                  color: Theme.of(context).dialogBackgroundColor,
                                   borderRadius: BorderRadius.circular(
                                       MediaQuery.of(context).size.width * 0.08),
                                 ),
@@ -335,8 +333,7 @@ class _MainScreenState extends State<MainScreen>
                             child: AnimatedContainer(
                                 duration: const Duration(milliseconds: 300),
                                 decoration: BoxDecoration(
-                                  color:
-                                      Theme.of(context).backgroundColor,
+                                  color: Theme.of(context).dialogBackgroundColor,
                                   borderRadius: BorderRadius.circular(
                                       MediaQuery.of(context).size.width * 0.08),
                                 ),

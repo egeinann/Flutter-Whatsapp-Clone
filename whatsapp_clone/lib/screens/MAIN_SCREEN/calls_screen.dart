@@ -16,7 +16,7 @@ class _CallsScreenState extends State<CallsScreen> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      child: Container(
+      child: SizedBox(
         child: Column(
           children: [
             // TOP CARD

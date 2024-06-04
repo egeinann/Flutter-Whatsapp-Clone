@@ -9,7 +9,7 @@ import 'package:whatsapp_clone/screens/SETTINGS_SCREENS/settings_screen.dart';
 import 'package:whatsapp_clone/screens/userchat_screen.dart';
 
 void main() {
-  // Uygulamanın yalnızca dikey modda kalmasını sağlamak için
+  // *** VERTICAL MODE ***
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
@@ -40,6 +40,7 @@ class WhatsappClone extends StatelessWidget {
                   const SettingsChatsScreen(),
             },
             // *** PROVIDER THEMECLASS STATE MANAGEMENT ***
+            // *** PROVIDER CLASS'I settings_chats_screen.dart DOSYASINDA ***
             theme: themeProvider.isDarkModeEnabled
                 ? ThemeClass.darkTheme
                 : ThemeClass.lightTheme,

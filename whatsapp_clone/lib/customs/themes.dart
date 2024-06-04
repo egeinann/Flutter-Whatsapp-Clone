@@ -3,22 +3,21 @@ import 'package:flutter/material.dart';
 class ThemeClass {
   // *** LIGHT THEME ***
   static ThemeData lightTheme = ThemeData.light().copyWith(
-    backgroundColor: Color.fromARGB(255, 182, 241, 183),
-    scaffoldBackgroundColor:
-        const Color.fromARGB(255, 245, 245, 245), // Scaffold widget'ının arka plan rengi
+    dialogBackgroundColor: const Color.fromARGB(
+          255, 182, 241, 183),
+    scaffoldBackgroundColor: const Color.fromARGB(
+        255, 245, 245, 245), // Scaffold widget'ının arka plan rengi
     appBarTheme: const AppBarTheme(
       color: Color.fromARGB(255, 245, 245, 245), // AppBar'ın arka plan rengi
       iconTheme:
           IconThemeData(color: Colors.black), // AppBar'daki ikonların rengi
     ),
     textTheme: const TextTheme(
-
       bodyLarge: TextStyle(color: Colors.black),
-      bodyMedium: TextStyle(
-          color: Color.fromARGB(255, 0, 0, 0)), // Birinci metin rengi
+      bodyMedium:
+          TextStyle(color: Color.fromARGB(255, 0, 0, 0)), // Birinci metin rengi
       bodySmall: TextStyle(
-          color:
-              Color.fromARGB(255, 28, 28, 28)), // İkinci metin rengi
+          color: Color.fromARGB(255, 28, 28, 28)), // İkinci metin rengi
     ),
     iconTheme: const IconThemeData(
         color: Color.fromARGB(255, 38, 38, 38)), // İkonların genel rengi
@@ -46,7 +45,7 @@ class ThemeClass {
 
   // *** DARK THEME ***
   static ThemeData darkTheme = ThemeData.dark().copyWith(
-    backgroundColor: const Color.fromARGB(255, 1, 103, 81),
+    dialogBackgroundColor: const Color.fromARGB(255, 1, 103, 81),
     scaffoldBackgroundColor:
         const Color(0xFF121B22), // Scaffold widget'ının arka plan rengi
     appBarTheme: const AppBarTheme(
@@ -56,8 +55,7 @@ class ThemeClass {
     ),
     textTheme: const TextTheme(
       bodyLarge: TextStyle(color: Colors.white),
-      bodyMedium:
-          TextStyle(color: Colors.white), // Birinci metin rengi
+      bodyMedium: TextStyle(color: Colors.white), // Birinci metin rengi
       bodySmall: TextStyle(
           color: Color.fromARGB(255, 187, 187, 187)), // İkinci metin rengi
     ),
@@ -85,13 +83,15 @@ class ThemeClass {
         ),
       ),
     ),
-    bottomAppBarTheme: const BottomAppBarTheme(color: Color.fromARGB(255, 7, 13, 18)),
+    bottomAppBarTheme:
+        const BottomAppBarTheme(color: Color.fromARGB(255, 7, 13, 18)),
   );
 }
 
 // ThemeData genişletmesi TextField - LIGHT THEME
 extension MyLightThemeDataExtension on ThemeData {
-  Color get appBarColorLight => const Color.fromARGB(255, 245, 245, 245); // Light tema için AppBar'ın rengi
+  Color get appBarColorLight => const Color.fromARGB(
+      255, 245, 245, 245); // Light tema için AppBar'ın rengi
 }
 
 // ThemeData genişletmesi TextField - DARK THEME

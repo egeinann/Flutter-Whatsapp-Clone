@@ -11,7 +11,7 @@ class UpdatesScreen extends StatefulWidget {
 class _UpdatesScreenState extends State<UpdatesScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       child: SingleChildScrollView(
         child: Column(
           children: [

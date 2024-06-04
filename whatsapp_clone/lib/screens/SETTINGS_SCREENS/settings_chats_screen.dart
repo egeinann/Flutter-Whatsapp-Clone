@@ -90,16 +90,7 @@ class _SettingsChatsScreenState extends State<SettingsChatsScreen> {
                           ],
                         ),
                         Switch(
-                          thumbColor:
-                                MaterialStateProperty.resolveWith((states) {
-                              if (states.contains(MaterialState.selected)) {
-                                return Colors
-                                    .white; // Açık durumdayken başparmak rengi
-                              }
-                              return Colors
-                                  .grey; // Kapalı durumdayken başparmak rengi
-                            }),
-                          activeColor: Color.fromARGB(255, 28, 59, 201),
+                          activeColor: const Color.fromARGB(255, 28, 59, 201),
                           value: themeProvider.isDarkModeEnabled,
                           onChanged: (value) {
                             themeProvider.toggleDarkMode(value);
@@ -183,15 +174,6 @@ class _SettingsChatsScreenState extends State<SettingsChatsScreen> {
                           ),
                         ),
                         Switch(
-                            thumbColor:
-                                MaterialStateProperty.resolveWith((states) {
-                              if (states.contains(MaterialState.selected)) {
-                                return Colors
-                                    .white; // Açık durumdayken başparmak rengi
-                              }
-                              return Colors
-                                  .grey; // Kapalı durumdayken başparmak rengi
-                            }),
                             activeTrackColor: Colors.green,
                             value: isSwitched1,
                             onChanged: (value) {
@@ -231,15 +213,6 @@ class _SettingsChatsScreenState extends State<SettingsChatsScreen> {
                           ),
                         ),
                         Switch(
-                          thumbColor:
-                                MaterialStateProperty.resolveWith((states) {
-                              if (states.contains(MaterialState.selected)) {
-                                return Colors
-                                    .white; // Açık durumdayken başparmak rengi
-                              }
-                              return Colors
-                                  .grey; // Kapalı durumdayken başparmak rengi
-                            }),
                             activeTrackColor: Colors.green,
                             value: isSwitched2,
                             onChanged: (value) {
@@ -332,15 +305,6 @@ class _SettingsChatsScreenState extends State<SettingsChatsScreen> {
                           ),
                         ),
                         Switch(
-                          thumbColor:
-                                MaterialStateProperty.resolveWith((states) {
-                              if (states.contains(MaterialState.selected)) {
-                                return Colors
-                                    .white; // Açık durumdayken başparmak rengi
-                              }
-                              return Colors
-                                  .grey; // Kapalı durumdayken başparmak rengi
-                            }),
                             activeTrackColor: Colors.green,
                             value: isSwitched3,
                             onChanged: (value) {
