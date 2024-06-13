@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:whatsapp_clone/customs/themes.dart';
-import 'package:whatsapp_clone/screens/MAIN_SCREEN/main_screen.dart';
-import 'package:whatsapp_clone/screens/SETTINGS_SCREENS/settings_chats_screen.dart';
-import 'package:whatsapp_clone/screens/camera_screen.dart';
-import 'package:whatsapp_clone/screens/SETTINGS_SCREENS/settings_screen.dart';
-import 'package:whatsapp_clone/screens/userchat_screen.dart';
+import 'package:whatsapp_clone/screens/tabBarScreens/chats_screen/userchat_screen.dart';
+import 'package:whatsapp_clone/screens/tabBarScreens/main_screen.dart';
+import 'package:whatsapp_clone/screens/settingsScreens/settings_chats_screen.dart';
+import 'package:whatsapp_clone/screens/tabBarScreens/camera_screen.dart';
+import 'package:whatsapp_clone/screens/settingsScreens/settings_screen.dart';
 
 void main() {
   // *** VERTICAL MODE ***

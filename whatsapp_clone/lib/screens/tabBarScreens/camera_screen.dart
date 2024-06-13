@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/models/model.dart';
+import 'package:whatsapp_clone/models/models.dart';
 
 class CameraScreen extends StatefulWidget {
   const CameraScreen({super.key});

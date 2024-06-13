@@ -3,7 +3,7 @@ import 'package:chat_bubbles/bubbles/bubble_special_one.dart';
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:whatsapp_clone/customs/themes.dart';
-import 'package:whatsapp_clone/models/model.dart';
+import 'package:whatsapp_clone/models/models.dart';
 
 class UserChatScreen extends StatefulWidget {
   const UserChatScreen({super.key});

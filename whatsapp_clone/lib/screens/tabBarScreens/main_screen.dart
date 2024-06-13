@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:whatsapp_clone/screens/MAIN_SCREEN/calls_screen.dart';
-import 'package:whatsapp_clone/screens/MAIN_SCREEN/chats_screen.dart';
-import 'package:whatsapp_clone/screens/MAIN_SCREEN/communities_screen.dart';
-import 'package:whatsapp_clone/screens/MAIN_SCREEN/updates_screen.dart';
+import 'package:whatsapp_clone/screens/tabBarScreens/calls_screen.dart';
+import 'package:whatsapp_clone/screens/tabBarScreens/chats_screen/chats_screen.dart';
+import 'package:whatsapp_clone/screens/tabBarScreens/communities_screen.dart';
+import 'package:whatsapp_clone/screens/tabBarScreens/updates_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});

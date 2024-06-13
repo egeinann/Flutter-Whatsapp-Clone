@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:whatsapp_clone/models/model.dart';
+import 'package:whatsapp_clone/models/models.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});

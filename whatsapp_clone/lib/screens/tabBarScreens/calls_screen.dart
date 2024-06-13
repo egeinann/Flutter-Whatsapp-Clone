@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:whatsapp_clone/models/model.dart';
+import 'package:whatsapp_clone/models/models.dart';
 
 class CallsScreen extends StatefulWidget {
   const CallsScreen({super.key});
