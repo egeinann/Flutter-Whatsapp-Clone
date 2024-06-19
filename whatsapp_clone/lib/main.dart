@@ -3,10 +3,10 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:whatsapp_clone/customs/themes.dart';
 import 'package:whatsapp_clone/screens/tabBarScreens/chats_screen/userchat_screen.dart';
-import 'package:whatsapp_clone/screens/tabBarScreens/main_screen.dart';
-import 'package:whatsapp_clone/screens/settingsScreens/settings_chats_screen.dart';
-import 'package:whatsapp_clone/screens/tabBarScreens/camera_screen.dart';
-import 'package:whatsapp_clone/screens/settingsScreens/settings_screen.dart';
+import 'package:whatsapp_clone/screens/main_structure.dart';
+import 'package:whatsapp_clone/screens/appBarScreens/settingsScreen/settings_chats_screen.dart';
+import 'package:whatsapp_clone/screens/appBarScreens/cameraScreen/camera_screen.dart';
+import 'package:whatsapp_clone/screens/appBarScreens/settingsScreen/settings_screen.dart';
 
 void main() {
   // *** VERTICAL MODE ***
@@ -33,7 +33,7 @@ class WhatsappClone extends StatelessWidget {
             initialRoute: "/main_screen",
             routes: {
               "/camera_screen": (context) => const CameraScreen(),
-              "/main_screen": (context) => const MainScreen(),
+              "/main_screen": (context) => const MainStructure(),
               "/userchat_screen": (context) => const UserChatScreen(),
               "/settings_screen": (context) => const SettingsScreen(),
               "/settings_chats_screen": (context) =>

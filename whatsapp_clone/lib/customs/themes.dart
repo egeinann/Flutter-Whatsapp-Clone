@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ThemeClass {
+
   // *** LIGHT THEME ***
   static ThemeData lightTheme = ThemeData.light().copyWith(
     dialogBackgroundColor: const Color.fromARGB(
@@ -42,6 +43,10 @@ class ThemeClass {
     ),
     bottomAppBarTheme: const BottomAppBarTheme(color: Colors.white),
   );
+
+
+
+
 
   // *** DARK THEME ***
   static ThemeData darkTheme = ThemeData.dark().copyWith(

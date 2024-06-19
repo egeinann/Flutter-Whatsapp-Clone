@@ -13,7 +13,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen> {
     return SizedBox(
       child: Column(
         children: [
-          // TOP CARD
+          //  *** TOP CARD ***
           Padding(
             padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * 0.02),
             child: SizedBox(
@@ -72,6 +72,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen> {
               ),
             ),
           ),
+          // *** DIVIDER ***
           Divider(thickness: MediaQuery.of(context).size.height*0.004)
         ],
       ),
